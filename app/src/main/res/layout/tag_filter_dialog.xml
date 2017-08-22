@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <com.easyexpense.commons.android.widgets.customviews.PrimaryTextView
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/max_text_size"
+        android:layout_margin="@dimen/max_widget_padding"
+        android:layout_height="wrap_content"
+        android:text="Add tags to Filter" />
+
+
+    <com.libaml.android.view.chip.ChipLayout
+        android:layout_marginLeft="@dimen/max_widget_padding"
+        android:layout_marginRight="@dimen/max_widget_padding"
+        android:layout_marginStart="@dimen/max_widget_padding"
+        android:layout_marginEnd="@dimen/max_widget_padding"
+        android:id="@+id/chipText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textSize_="@dimen/secondary_text_size"
+        app:chipPadding_="4dp"
+        app:chipTextPadding_="2dp"
+        app:textColor_="@android:color/black"
+        app:deleteIcon_="@android:drawable/presence_offline"
+        app:labelPosition_="left"
+        app:chipDrawable_="@drawable/round_corner_drawable"
+        app:chipLayoutDrawable_="@drawable/edittext_theme_landing_page"/>
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.easyexpense.commons.android.widgets.customviews.SecondaryTextView
+            android:padding="@dimen/max_widget_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/cancel_dialog"
+            android:textSize="@dimen/secondary_text_size"
+            android:textColor="@color/colorAccent"/>
+
+        <com.easyexpense.commons.android.widgets.customviews.SecondaryTextView
+            android:padding="@dimen/max_widget_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddCard"
+            android:text="@string/done"
+            android:textSize="@dimen/secondary_text_size"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.easyexpense.android.ledgerdetail.LedgerDetailActivity">
+    <item
+        android:id="@+id/action_rename_board"
+        android:orderInCategory="100"
+        android:title="@string/edit_board"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_export_excel"
+        android:orderInCategory="101"
+        android:title="@string/export_excel"
+        app:showAsAction="never" />
+
+</menu>

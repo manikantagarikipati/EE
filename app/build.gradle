@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion androidSdkVersion
+    buildToolsVersion androidToolsVersion
+
+    defaultConfig {
+        applicationId basePackageName
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidSdkVersion
+        versionCode versionCode
+        versionName versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors.whenObjectAdded { flavor ->
+
+        def flavorData = rootProject.ext[flavor.name]
+
+        flavor.applicationId flavorData.packageName
+        flavor.versionCode flavorData.versionCode
+        flavor.versionName flavorData.versionName
+        flavor.resValue 'string', resAppName, flavorData.appName
+
+    }
+
+    productFlavors {
+        free {}
+    }
+
+    packagingOptions {
+        exclude 'META-INF/notice'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+    }
+
+}
+
+dependencies {
+
+    def presentationDependencies = rootProject.ext.presentationDependencies
+    compile presentationDependencies.butterKnife
+    compile presentationDependencies.appCompat
+    compile presentationDependencies.androidMaterialDesign
+    compile presentationDependencies.cardView
+    compile presentationDependencies.poiVersion
+    compile presentationDependencies.floatingActionMenu
+    compile presentationDependencies.chipsView
+    compile project(':commons')
+    compile(project(':db'))
+    apt presentationDependencies.butterKnifeCompiler
+}

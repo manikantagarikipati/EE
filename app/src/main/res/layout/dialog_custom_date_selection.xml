@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <com.easyexpense.commons.android.widgets.customviews.PrimaryTextView
+
+        android:layout_margin="@dimen/max_widget_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_range"
+        android:textSize="@dimen/max_text_size"
+        android:textColor="@color/black"/>
+
+    <com.easyexpense.commons.android.widgets.customviews.PrimaryTextView
+        android:layout_margin="@dimen/max_widget_padding"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/secondary_text_size"
+        android:text="@string/select_start_date"/>
+
+    <com.easyexpense.commons.android.widgets.customviews.PrimaryTextView
+        android:layout_marginLeft="@dimen/max_widget_padding"
+        android:layout_marginStart="@dimen/max_widget_padding"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/secondary_text_size"
+        android:text="@string/select_end_date"/>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:contentPadding="@dimen/min_card_content_padding"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="1dp"
+    android:id="@+id/dcv_item"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.easyexpense.commons.android.widgets.customviews.PrimaryTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/tv_amount"
+            android:layout_toStartOf="@id/tv_amount"
+            tools:text="Mani" />
+
+
+        <com.easyexpense.commons.android.widgets.customviews.PrimaryTextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            tools:text="3412341234" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,11 @@
+<com.easyexpense.commons.android.widgets.customviews.SecondaryTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:padding="@dimen/max_widget_padding"
+    android:background="@color/white"
+    style="?android:attr/dropDownItemStyle"
+    android:singleLine="true"
+    android:textSize="@dimen/secondary_text_size"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:textAlignment="inherit"/>

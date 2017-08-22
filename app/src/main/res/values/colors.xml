@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="primaryLight">#BBDEFB</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+
+
+    <color name="credit_color">#D32F2F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#7f7f7f</color>
+    <color name="black">#424242</color>
+    <color name="transparent_grey">#4D7F7F7F</color>
+    <color name="light_grey">#0D7F7F7F</color>
+    <color name="green">#009688</color>
+
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="dark_grey">#EEEEEE</color>
+    <color name="white_grey">#40FFFFFF</color>
+    <color name="expense_color">#C62828</color>
+    <color name="income_color">#00796B</color>
+
+</resources>

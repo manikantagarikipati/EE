@@ -1,0 +1,13 @@
+ext{
+
+    basePackageName    =  'com.easyexpense.android'
+    resAppName         =  'EasyExpense'
+
+    free = [
+            packageName : "${basePackageName}.free",
+            appName     : "EasyExpense",
+            versionName : "1.0",
+            versionCode :  1
+    ]
+
+}

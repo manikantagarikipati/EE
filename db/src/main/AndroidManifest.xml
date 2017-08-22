@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.geekmk.db">
+
+    <application
+        android:name=".EEDBApplication"
+        android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="ee.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.geekmk.db.dto.Board, com.geekmk.db.dto.CardTag,
+             com.geekmk.db.dto.CardTransaction, com.geekmk.db.dto.Ledger,
+             com.geekmk.db.dto.LedgerCard" />
+
+
+
+    </application>
+
+</manifest>

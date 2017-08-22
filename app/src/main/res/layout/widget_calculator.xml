@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <GridLayout
+    android:background="@color/light_grey"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ll_calculator_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="4">
+
+        <Button
+            android:layout_margin="1dp"
+            android:background="@color/transparent_grey"
+            android:layout_gravity="fill"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="-"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_minus" />
+
+        <Button
+            android:layout_margin="1dp"
+            android:background="@color/transparent_grey"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="/"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_divide" />
+
+        <Button
+            android:layout_margin="1dp"
+            android:background="@color/transparent_grey"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="*"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_multiple" />
+
+        <ImageView
+            android:layout_margin="1dp"
+            android:background="@color/transparent_grey"
+            android:layout_gravity="fill"
+            android:clickable="true"
+            android:id="@+id/btn_cal_submit"
+            android:scaleType="center"
+            android:contentDescription="@string/cd_back_space"
+            android:tint="@color/colorAccent"
+            android:src ="@drawable/ic_done_white_24dp"/>
+
+        <Button
+            android:layout_margin="1dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="7"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_seven" />
+
+        <Button
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="8"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_eight" />
+        <Button
+            android:layout_margin="1dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="9"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_nine" />
+
+        <ImageView
+            android:layout_margin="1dp"
+            android:layout_gravity="fill"
+            android:clickable="true"
+            android:id="@+id/btn_cal_camera"
+            android:scaleType="center"
+            android:contentDescription="@string/cd_back_space"
+            android:tint="@color/colorAccent"
+            android:background="@color/transparent_grey"
+            android:src ="@drawable/ic_menu_camera"/>
+
+        <Button
+            android:layout_margin="1dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="4"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_four" />
+
+        <Button
+            android:layout_margin="1dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="5"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_five" />
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="6"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_six" />
+        <ImageView
+            android:layout_margin="1dp"
+            android:layout_gravity="fill"
+            android:clickable="true"
+            android:id="@+id/btn_cal_comment"
+            android:scaleType="center"
+            android:tint="@color/colorAccent"
+            android:contentDescription="@string/cd_back_space"
+            android:background="@color/transparent_grey"
+            android:src ="@drawable/ic_action_comments"/>
+        <Button
+            android:layout_margin="1dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="1"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_one" />
+        <Button
+            android:layout_margin="1dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="2"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_two" />
+        <Button
+            android:layout_margin="1dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="3"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_three" />
+
+        <Button
+            android:layout_margin="1dp"
+            android:layout_gravity="fill"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="+"
+            android:background="@color/transparent_grey"
+            android:id="@+id/btn_cal_plus"
+            android:textSize="@dimen/calculator_input_text_size" />
+
+
+        <Button
+            android:layout_margin="1dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="."
+            android:background="@color/white"
+            android:id="@+id/btn_cal_dot"
+            android:textSize="@dimen/calculator_input_text_size"
+            />
+
+        <Button
+            android:layout_margin="1dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="4"
+            android:layout_column="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="0"
+            android:background="@color/white"
+            android:textSize="@dimen/calculator_input_text_size"
+            android:id="@+id/btn_cal_zero" />
+
+        <ImageButton
+            android:layout_margin="1dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_gravity="fill"
+            android:clickable="true"
+            android:background="@color/white"
+            android:scaleType="center"
+            android:id="@+id/btn_cal_clear"
+            android:contentDescription="@string/cd_back_space"
+            android:src ="@drawable/ic_keyboard_backspace_black_24dp"/>
+
+        <Button
+            android:layout_margin="1dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="="
+            android:background="@color/transparent_grey"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_gravity="fill"
+            android:id="@+id/btn_cal_equals"
+            android:textSize="@dimen/calculator_input_text_size"/>
+
+    </GridLayout>

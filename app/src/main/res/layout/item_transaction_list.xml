@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="@dimen/min_widget_padding"
+    android:layout_marginTop="@dimen/min_widget_padding"
+    android:layout_marginLeft="@dimen/max_widget_padding"
+    android:layout_marginRight="@dimen/max_widget_padding"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:clipChildren="false"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <com.easyexpense.commons.android.widgets.customviews.PrimaryTextView
+                tools:text="Milk and vegetables "
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_source_name"
+                android:layout_height="wrap_content" />
+
+            <com.easyexpense.commons.android.widgets.customviews.SecondaryTextView
+                tools:text="any comments "
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_source_comments"
+                android:layout_height="wrap_content" />
+
+            <com.easyexpense.commons.android.widgets.customviews.SecondaryTextView
+                tools:text="12/7/14 "
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_source_date"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_attach_file_black_24dp"
+            android:gravity="center_vertical"
+            app:backgroundTint="@color/white"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            android:layout_width="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/iv_attachment"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.easyexpense.commons.android.widgets.customviews.PrimaryTextView
+                android:gravity="end"
+                tools:text="400"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/tv_destination_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.easyexpense.commons.android.widgets.customviews.SecondaryTextView
+                android:gravity="end"
+                tools:text="HDFC Account"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:id="@+id/tv_destination_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

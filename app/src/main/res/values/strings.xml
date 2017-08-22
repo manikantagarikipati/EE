@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Easy Expense</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="create_new_item">Create New List</string>
+    <string name="delete_item">Delete List</string>
+    <string name="edit_item">Edit</string>
+    <string name="edit_board">Rename</string>
+    <string name="delete_board">Delete</string>
+
+
+    <string name="this_month">This Month</string>
+    <string name="last_month">Last Month</string>
+    <string name="this_quarter">This Quarter</string>
+    <string name="last_quarter">Last Quarter</string>
+    <string name="this_year">This Year</string>
+    <string name="last_year">Last Year</string>
+    <string name="custom_range">Custom Range</string>
+    <string name="select_start_date">Select Start Date</string>
+    <string name="select_end_date">Select End Date</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="item_time_frame_entries">
+        <item>@string/this_month</item>
+        <item>@string/last_month</item>
+        <item>@string/this_quarter</item>
+        <item>@string/last_quarter</item>
+        <item>@string/this_year</item>
+        <item>@string/last_year</item>
+        <item>@string/custom_range</item>
+
+    </string-array>
+    <string name="title_activity_expense_input">ExpenseInputActivity</string>
+    <string name="cd_back_space">clear</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="transaction_indicator">Transaction Indicator</string>
+    <string name="transaction_submit">Done</string>
+    <string name="operation_info">Manage Tags</string>
+    <string name="title_activity_tags">Tags</string>
+    <string name="empty_tag_list">Empty Tag List</string>
+    <string name="create_tag">Create a tag</string>
+    <string name="menu_search">Search</string>
+    <string name="enter_tag_name">Enter tag name</string>
+    <string name="empty_input">%1$s cannot be empty</string>
+    <string name="duplicate_input">%1$s already exists </string>
+    <string name="tag">tag</string>
+    <string name="card">card</string>
+    <string name="amount">amount</string>
+    <string name="title_label_edit_tag">Edit Tag</string>
+    <string name="title_activity_board_list">BoardListActivity</string>
+    <string name="default_board_select">Default Ledger</string>
+    <string name="create_board">Create Ledger</string>
+    <string name="enter_board_name">Enter Ledger Name</string>
+    <string name="board_name">Ledger Name</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="enter_comment">Add Comment</string>
+    <string name="comment">Comment</string>
+    <string name="msg_invalid_image_selection">Cannot read Image, please check if image is valid and you have approved permissions request to access them.</string>
+    <string name="select_another_image">Cannot read selected image. Please select another image</string>
+    <string name="create_card">Create Card</string>
+    <string name="enter_card_name">Card Name</string>
+    <string name="enter_amount">Amount</string>
+    <string name="name">Name</string>
+    <string name="cannot_delete_def_board">Cannot delete default ledger</string>
+    <string name="rename">Rename</string>
+    <string name="export_excel">Export Excel</string>
+    <string name="action_back">Back</string>
+    <string name="title_activity_transaction_list">TransactionListActivity</string>
+    <string name="view_transactions">View Transactions</string>
+
+    <string name="source_text"> <b> %1$s </b> \n %2$s</string>
+    <string name="selected_image">Selected Image</string>
+    <string name="edit_card">Edit Card</string>
+    <string name="delete_card">Delete Card</string>
+
+</resources>

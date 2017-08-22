@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/max_widget_padding"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_margin="@dimen/min_widget_padding"
+        android:layout_width="match_parent"
+        android:id="@+id/til_tag_name"
+        android:layout_height="wrap_content">
+        <com.easyexpense.commons.android.widgets.customviews.SecondaryEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.easyexpense.commons.android.widgets.customviews.SecondaryTextView
+            android:padding="@dimen/max_widget_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/cancel_dialog"
+            android:textSize="@dimen/secondary_text_size"
+            android:textColor="@color/colorAccent"/>
+
+        <com.easyexpense.commons.android.widgets.customviews.SecondaryTextView
+            android:padding="@dimen/max_widget_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDone"
+            android:text="@string/done"
+            android:textSize="@dimen/secondary_text_size"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+</LinearLayout>

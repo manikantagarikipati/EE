@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.easyexpense.android.ledgerdetail.LedgerDetailActivity"
+    tools:showIn="@layout/activity_board_detail">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_board_items"
+        android:paddingLeft="@dimen/pager_padding_left"
+        android:paddingStart="@dimen/pager_padding_left"
+        android:paddingRight="@dimen/pager_padding_right"
+        android:paddingEnd="@dimen/pager_padding_right"
+        android:paddingTop="@dimen/min_widget_padding"
+        android:paddingBottom="@dimen/min_widget_padding"
+        android:clipToPadding="false"
+        android:layout_centerHorizontal="true"
+        android:overScrollMode="never"/>
+    
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<com.easyexpense.commons.android.widgets.customviews.SecondaryTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:maxLines="1"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:textColor="@color/black"
+    android:textSize="@dimen/min_text_size"
+    android:ellipsize="marquee"/>
